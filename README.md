@@ -4,6 +4,6 @@ It's based on "The Cyber Threat Intelligence Repository" of ATT&CK and CAPEC cat
 
 # Usage
 ```
-python3 --group|-g <threat actor>
+python3 get_techniques_data_sources_from_group.py --group|-g <threat actor>
 ```
 Use -h for help.
