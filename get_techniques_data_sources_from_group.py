@@ -21,10 +21,21 @@ def get_technique_by_group(src, stix_id):
         Filter('id', 'in', [r.target_ref for r in relations])
     ])
 
+def get_all_groups(src):
+    groups = []
+    q = src.query([Filter('type', '=', 'intrusion-set')])
+    for item in q:
+        groups.append(item.name)
+    return groups
+
 parser = argparse.ArgumentParser(description='From Group to techniques & data source')
 parser.add_argument('--group','-g', type=str, help='ATT&CK Group',required=True)
 args = parser.parse_args()
 group = args.group
+
+if group not in get_all_groups(fs):
+    print("Invalid Group")
+    exit()
 
 group = get_group_by_alias(fs, group)[0]
 techniques = get_technique_by_group(fs, group)
