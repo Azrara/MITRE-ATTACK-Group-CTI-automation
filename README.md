@@ -23,5 +23,5 @@ python3 get_techniques_data_sources_from_group.py --group|-g APT33
 ```
 After uploading the result in RawGraphs you will have visualizaiton of relations between techniques and data source required to detect them:
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](apt33.png)
 Format: ![Alt Text](url)
