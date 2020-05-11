@@ -9,6 +9,6 @@ python3 get_techniques_data_sources_from_group.py --group|-g <threat actor>
 Use -h for help.
 
 # Requirements
-*Python3+
-*STIX2 Library
-*Taxii2client Library
+* Python3+
+* STIX2 Library
+* Taxii2client Library
