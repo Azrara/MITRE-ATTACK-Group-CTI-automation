@@ -5,6 +5,7 @@ It's based on "The Cyber Threat Intelligence Repository" of ATT&CK and CAPEC cat
 Result is a CSV file that you can upload in : https://app.rawgraphs.io/ for visualization.
 
 # Usage
+Script works with Python3+. Use option "--group" or "-g" and choose a threat actor.
 ```
 python3 get_techniques_data_sources_from_group.py --group|-g <threat actor>
 ```
